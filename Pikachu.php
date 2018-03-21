@@ -2,7 +2,7 @@
 
 class Pikachu extends Pokemon {
 	public $type;
-	public $maxHealth;
+	public $health;
 	public $attacks;
 	public $weakness;
 	public $resistance;
@@ -11,7 +11,7 @@ class Pikachu extends Pokemon {
 	{
 	  $this->name = $name;
 	  $this->type = new Type('Electric');
-	  $this->maxHealth = 60;
+	  $this->health = 60;
 	  $this->attacks = array(new attack('Pika Punch', 20), new attack('Electric Ring', 50));
 	  $this->weakness = new Weakness('Fire', 1.5);
 	  $this->resistance = new Resistance('Fighting', 20);

@@ -1,12 +1,12 @@
 <?php
 
 class Weakness {
-	public $weakness;
+	public $type;
 	public $multiplier;
 
-	public function __construct($weakness, $multiplier)
+	public function __construct($type, $multiplier)
 	 {
-	 	 $this->weakness = $weakness;
+	 	 $this->type = $type;
 	 	 $this->multiplier = $multiplier;
 	 }
 }

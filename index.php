@@ -14,3 +14,8 @@ $Charmeleon = new Charmeleon('Charmeleon');
 echo "<pre>";
 print_r($Pikachu);
 print_r($Charmeleon);
+
+echo 'Pikachu: ' . $Pikachu->health . ' health' . '<br>';
+echo $Charmeleon->health . '<br>';
+echo $Pikachu->attack($Pikachu->attacks[1], $Charmeleon);
+echo $Charmeleon->health . '<br>';
