@@ -11,5 +11,6 @@ require 'Charmeleon.php';
 $Pikachu = new Pikachu('Pikachu');
 $Charmeleon = new Charmeleon('Charmeleon');
 
-print_r('<pre>' . $Pikachu . '</pre>');
-print_r('<pre>' . $Charmeleon . '</pre>');
+echo "<pre>";
+print_r($Pikachu);
+print_r($Charmeleon);
