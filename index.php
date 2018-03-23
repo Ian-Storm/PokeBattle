@@ -16,6 +16,10 @@ print_r($Pikachu);
 print_r($Charmeleon);
 
 echo 'Pikachu: ' . $Pikachu->health . ' health' . '<br>';
-echo $Charmeleon->health . '<br>';
-echo $Pikachu->attack($Pikachu->attacks[1], $Charmeleon);
-echo $Charmeleon->health . '<br>';
+echo 'Charmeleon: ' . $Charmeleon->health . ' health' . '<br>';
+echo 'Pikachu used ' . $Pikachu->attacks[1]->attack . '<br>';
+	 $Pikachu->attack($Pikachu->attacks[1], $Charmeleon);
+echo 'Charmeleon: ' . $Charmeleon->health . ' health left' . '<br>';
+	 $Charmeleon->attack($Charmeleon->attacks[1], $Pikachu);
+echo 'Charmeleon used ' . $Charmeleon->attacks[1]->attack . '<br>';
+echo 'Pikachu: ' . $Pikachu->health . ' health left' . '<br>';
